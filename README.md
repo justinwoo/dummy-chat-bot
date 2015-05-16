@@ -10,13 +10,13 @@ looks like this:
 currently exposes two methods for registering "plugins":
 
 ```java
-    public void subscribeToInputStream(Action1 observer) {
-        inputStream.subscribe(observer);
-    }
+public void subscribeToInputStream(Action1 observer) {
+    inputStream.subscribe(observer);
+}
 
-    public void subscribeToOutputStream(Action1 observer) {
-        outputStream.subscribe(observer);
-    }
+public void subscribeToOutputStream(Action1 observer) {
+    outputStream.subscribe(observer);
+}
 ```
 
 ## "plugin" "design"
