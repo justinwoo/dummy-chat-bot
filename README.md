@@ -34,3 +34,13 @@ public class Printer {
     }
 }
 ```
+
+and then we register them when we make our bot
+
+```java
+        Bot myBot = new Bot("botsama", "botsama");
+
+        myBot.subscribeToInputStream(Printer.create());
+        myBot.subscribeToOutputStream(Printer.create());
+        myBot.subscribeToInputStream(Echo.create(myBot));
+```
